@@ -1,33 +1,132 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.headerList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkslateblue;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.hItem {
+  float: left;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 20%;
+  margin-left:20px;
+}
+.hItem a:hover {
+  background-color: lightseagreen;
+}
+.hItem a {
+  color: white;
+}
+.hItem-small {
+  float: left;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 8%;
+}
+.hItem-small a:hover {
+  background-color: lightseagreen;
+}
+.hItem-small a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header {
+  background-color: lightsteelblue;
+  color: black;
+  min-height: 100px;
+  padding: 50px;
+  text-align: center;
+  background-image: url(https://ak4.picdn.net/shutterstock/videos/1938364/thumb/1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  width: 400px;
+  margin: auto;
+  background-color: lightblue;
+}
+
+.resultsArea {
+  background-color: lightblue;
+  width: 600px;
+  margin: auto;
+}
+.resultsArea ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.book {
+  margin: auto;
+
+}
+
+.imgDesc {
+  width: 80%;
+  height: 170px;
+  background-color: lightseagreen;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  object-fit: cover;
+  display: inline-block;
+  position: relative;
+}
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+.description {
+  position: relative;
+  background-color: lightseagreen;
+  color: white;
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+}
+
+.game {
+  background-color: white;
+  min-height: 600px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.gameArea {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: darkgoldenrod;
+  height: 100px;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: darkslateblue;
+  padding: 10px;
+  font-weight: bold;
+  width: 98.9%;
 }
